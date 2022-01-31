@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+    --Very-light-gray: hsl(0, 0%, 95%);
+    --Transparent-white: hsla(0, 0%, 100%, 0.75);
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    margin-top: calc((100vh - 490px)/2);
+    margin-bottom: calc((100vh - 490px)/2);
+    justify-content:center;
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); */
+}
+
+.car-container {
+    height: 490px;
+    width: 300px;
+    color:var(--Transparent-white);
+    position: relative;
+}
+
+.orange {
+    background-color: var(--Bright-orange);
+    color: var(--Bright-orange);
+    border-radius: 8px 0px 0px 8px;
+}
+
+.cyan {
+    background-color: var(--Dark-cyan);
+    color: var(--Dark-cyan);
+}
+
+.darkcyan{
+    background-color: var(--Very-dark-cyan);
+    color: var(--Very-dark-cyan);    
+    border-radius: 0px 8px 8px 0px;
+}
+
+.car-info {
+    padding: 45px;
+    padding-right: 51px;
+}
+
+.icon {
+    padding: 0px 0px 30px 0px;
+}
+
+.car-info h2{
+    padding-bottom: 25px;
+    color: var(--Very-light-gray);
+    font-size: 38px;
+    font-family: 'Big Shoulders Display', cursive;
+}
+
+.car-info p {
+    color: var(--Transparent-white);
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 14.5px;
+    line-height: 18pt;
+
+}
+
+
+
+@media (max-width: 900px) {
+    .container {
+      flex-direction: column;
+      align-items: center;
+    }
+    .orange{
+        border-radius: 8px 8px 0px 0px;
+    }
+    .darkcyan {
+        border-radius: 0px 0px 8px 8px;
+    }
+  }
+
+  @media (max-height: 500px){
+    .container {
+        margin-top:0;
+        margin-bottom: 0;
+      }
+  }
+
+.footer {
+    padding: 10px;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin-bottom: 0px;
+}
+
+.learn-button {
+    background-color: var(--Very-light-gray);
+    font-family: 'Lexend Deca', sans-serif ;
+    position: relative;
+    top: 80px;
+    width: 142px;
+    height: 47px;
+    border-radius: 30px;
+    border: 0px;
+    font-size: 15px;
+}
